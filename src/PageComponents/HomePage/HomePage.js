@@ -9,8 +9,13 @@ import Dashboard from "../Dashboard/Dashboard";
 
 const HomePage = () => {
   const { loading, error, data } = useQuery(FETCH_ALL_BUILDINGS);
-  if (loading) return 'Loading';
-  if (error) return 'Error';
+  if (loading || error) return (
+    <div className="empty">
+      {!loading ? 'Loading...' : (
+        <div className="error">Error</div>
+      )}
+    </div>
+  );
 
   return <Dashboard buildingList={data.Buildings} />;
 };

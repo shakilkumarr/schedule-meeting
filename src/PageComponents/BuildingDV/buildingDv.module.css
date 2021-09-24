@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+}
+
+.buildingInformationContainer {
+  width: 100%px;
+  max-height: 100%;
+  overflow: scroll;
+  padding: 16px;
+}
+
+.formContainer {
+  display: flex;
+  width: 100%;
+  height: 40px;
+}
+
+.formLabel {
+  width: 30%;
+}
+
+.formValue {
+  width: 20%;
+}
