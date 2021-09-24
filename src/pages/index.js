@@ -7,7 +7,7 @@ import {
 import HomePage from "../PageComponents/HomePage";
 
 const client = new ApolloClient({
-  uri: 'http://smart-meeting.herokuapp.com/graphql',
+  uri: 'https://smart-meeting.herokuapp.com/graphql',
   cache: new InMemoryCache(),
 });
 
